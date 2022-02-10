@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    
+    background: radial-gradient(circle, rgba(113,183,230,1) 0%, rgba(155,89,182,1) 100%);
+    padding: 10px;
+}
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    margin-top: 10rem;
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+}
+.container .title::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 6rem;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    left: 17rem;    
+    bottom: 0px;
+    top: 2.3rem;
+}
+.container .form-register .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+    
+}
+form-register .user-details .input-box{
+    margin-bottom: 15px;
+}
+
+.user-details .input-box .details{
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #A3A1FF;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.user-details .input-box input:focus{
+    border-color: #9b59b6;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.btn-hover {
+    width: 6rem;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 20px 0 20px;
+    height: 3rem;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-7 {
+    background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+
+
+@media (max-width: 584px){
+    .container{
+        max-width: 100%;
+    }
+    form .user-details .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .container form .user-details{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .user-details::-webit-scrollar{
+        width: 100%;
+    }
+}
+
+
+
+

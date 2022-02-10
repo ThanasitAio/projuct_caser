@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --body-color:#E4E9F7;
+    --nav-color:#4070F4;
+    --side-nav:#010718;
+    --text-color:#FFF;
+    --search-bar:#F2F2F2;
+    --search-text:#010718;
+}
+body{
+   
+    background-color: var(--body-color);
+}
+nav{
+    /*position: fixed;*/
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    padding: 15px;
+    background: radial-gradient(circle, #466efc 0%, #3f5efb 100%);
+    
+}
+
+nav .nav-bar{
+    position: relative;
+    height: 100%;
+ 
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+.nav-bar .nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar .nav-links li{
+    margin: 0 5px;
+    list-style: none;
+}
+
+.nav-links li a{
+    position: relative;
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px;
+}
+.nav-links li a:hover {
+    color: #9fb6e6;
+}
+.nav-links li a::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 6px;
+    width: 6px;
+    transform: translateX(50%);
+    border-radius: 50%;
+    background-color: #9fb6e6;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.nav-links li:hover a::before{
+    opacity: 1;
+    
+}
+
+nav .nav-bar .logo a{
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--text-color);
+    text-decoration: none;
+} 
+
+#logout{
+    cursor: pointer;
+    color: #FFF;
+}
+#logout:hover {
+    color:#FF0000;
+  }
